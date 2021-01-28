@@ -8,11 +8,10 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        {/* <HomeScreen /> */}
-        {/* <DestinationSearch /> */}
-        <SearchResults />
-      </SafeAreaView>
+
+      {/* <HomeScreen /> */}
+      {/* <DestinationSearch /> */}
+      <SearchResults />
     </>
   )
 }
