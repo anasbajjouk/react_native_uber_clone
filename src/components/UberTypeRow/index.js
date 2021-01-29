@@ -7,10 +7,11 @@ const UberTypeRow = ({ types }) => {
   const { type, price, duration } = types || {}
 
   const getImageName = () => {
-    if (type === 'UberX') return require(`../../assets/images/UberX.jpeg`)
-    if (type === 'Comfort') return require(`../../assets/images/Comfort.jpeg`)
-    if (type === 'UberXL') return require(`../../assets/images/UberXL.jpeg`)
+    if (type === 'UberX') return require('../../assets/images/UberX.jpeg')
+    if (type === 'Comfort') return require('../../assets/images/Comfort.jpeg')
+    if (type === 'UberXL') return require('../../assets/images/UberXL.jpeg')
   }
+
   return (
     <View style={styles.container}>
       <Image source={getImageName()} style={styles.image} />

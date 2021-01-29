@@ -9,9 +9,9 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
 
-      {/* <HomeScreen /> */}
+      <HomeScreen />
       {/* <DestinationSearch /> */}
-      <SearchResults />
+      {/* <SearchResults /> */}
     </>
   )
 }

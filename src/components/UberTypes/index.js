@@ -7,7 +7,8 @@ import styles from './styles'
 
 const UberTypes = ({ dimension, dimensionPerScreen = 2.4, navbarHeight }) => {
   const OS = Platform.OS
-  console.log(dimension.height / navbarHeight - navbarHeight)
+ 
+  
   return (
     <View
       style={[

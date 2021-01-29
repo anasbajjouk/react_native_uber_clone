@@ -13,15 +13,13 @@ const SearchResults = () => {
   const navbarHeight = screenHeight - windowHeight + StatusBar.currentHeight
 
   const confirm = () => console.warn('Comfirmed')
-  console.log('dimension: ', dimension)
+
 
   return (
-    <View
- 
-    >
+    <View>
       <HomeMap dimension={dimension} />
       <View>
-        <UberTypes dimension={dimension} navbarHeight={navbarHeight}/>
+        <UberTypes dimension={dimension} navbarHeight={navbarHeight} />
         <Pressable onPress={confirm} style={styles.confirmButton}>
           <Text style={styles.confirmText}>Confirm Uber</Text>
         </Pressable>
