@@ -2,6 +2,7 @@ import React from 'react'
 import { Pressable, Text, View, StatusBar, Dimensions } from 'react-native'
 import useWindowDimensions from 'react-native/Libraries/Utilities/useWindowDimensions'
 import HomeMap from '../../components/HomeMap'
+import RouteMap from '../../components/RouteMap'
 import UberTypes from '../../components/UberTypes'
 import styles from './styles'
 
@@ -17,7 +18,8 @@ const SearchResults = () => {
 
   return (
     <View>
-      <HomeMap dimension={dimension} />
+      {/* <HomeMap dimension={dimension} /> */}
+      <RouteMap dimension={dimension} />
       <View>
         <UberTypes dimension={dimension} navbarHeight={navbarHeight} />
         <Pressable onPress={confirm} style={styles.confirmButton}>
